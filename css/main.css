@@ -6,7 +6,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background: #6b00d6;
+  background: blue;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -14,7 +14,7 @@ body {
 }
 
 button {
-  background: #9122ff;
+  background: dodgerblue;
   border: none;
   color: white;
   padding: 0.5em 1em;
@@ -62,23 +62,23 @@ button {
   padding: 0;
 }
 
-.menu-container ul li {
+.menu-container ul li a {
   text-decoration: none;
-  color: black;
+  color: dodgerblue;
   display: block;
   padding: 0.8em 2em 0.8em 1em;
   font-size: 0.9em;
 }
 
-.menu-container ul li:hover {
+.menu-container ul li a .hover {
   background: #f0ecf0;
   border-radius: 0.2em;
 }
 
-p.category {
+.category {
   font-size: 1.2em;
   font-weight: bold;
-  color: #6b00d6;
+  color: blue;
   margin-left: 0.8em;
 }
 

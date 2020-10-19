@@ -5,14 +5,16 @@
 body {
   margin: 0;
   height: 100vh;
-  background: #6b00d6;
+  // background: #6b00d6;
+  background: blue;
   display: grid;
   place-content: center;
   font-family: 'Nunito', Arial;
 }
 
 button {
-  background: #9122ff;
+  // background: #9122ff;
+  background: dodgerblue;
   // background: dodgerblue;
   border: none;
   color: white;
@@ -25,7 +27,6 @@ button {
 }
 
 .overlay {
-  // display: none;
   clip-path: circle(0%);
   position: fixed;
   background: #fffeff;
@@ -56,14 +57,15 @@ button {
     list-style-type: none;
     padding: 0;
 
-    li {
+    li a {
       text-decoration: none;
-      color: black;
+      // color: black;
+      color: dodgerblue;
       display: block;
       padding: 0.8em 2em 0.8em 1em;
       font-size: 0.9em;
 
-      &:hover {
+      .hover {
         background: rgb(240, 236, 240);
         border-radius: 0.2em;
       }
@@ -71,10 +73,11 @@ button {
   }
 }
 
-p.category {
+.category {
   font-size: 1.2em;
   font-weight: bold;
-  color: #6b00d6;
+  // color: #6b00d6;
+  color: blue;
   margin-left: 0.8em;
 }
 
