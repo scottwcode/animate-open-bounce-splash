@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <button>Click Here to Launch</button>
+
+    <div class="overlay">
+      <a href="#" class="exit"
+        ><img src="images/close.svg" alt="Exit navigation"
+      /></a>
+      <div class="menu">
+        <div class="menu-container">
+          <p class="category">Menu</p>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const button = document.querySelector('button');
+      const overlay = document.querySelector('.overlay');
+      const exit = document.querySelector('.exit');
+
+      var tl = gsap.timeline({
+        defaults: { duration: 1, ease: Back.easeOut.config(2) },
+      });
+
+      tl.paused(true);
+      tl.to('.overlay', { clipPath: 'circle(100%)' });
+      tl.to('.menu-container', { opacity: 1, y: '30px', stagger: 0.1 }, '-=1');
+
+      button.addEventListener('click', () => {
+        tl.play();
+      });
+
+      exit.addEventListener('click', () => {
+        tl.reverse(0.7);
+      });
+    </script>
+  </body>
+</html>
