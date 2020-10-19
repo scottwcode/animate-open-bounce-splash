@@ -1,5 +1,5 @@
 # animated-open-bounce-splash
 
-Basic splash page with a launch button that uses GSAP to perform a circle opening animation to a menu page. The menu will bounce a little bit when first arriving at the page.
+Basic splash page with a launch button that (when clicked) will perform a circle opening animation to a menu page that bounces a little bit when first arriving at the page. Uses GSAP (via cdn embedded reference)
 
-live - https://scottwcode.github.io/animated-open-bounce-splash/
+live demo - https://scottwcode.github.io/animated-open-bounce-splash/
